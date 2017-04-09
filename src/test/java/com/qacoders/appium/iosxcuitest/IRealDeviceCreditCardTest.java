@@ -4,6 +4,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -12,9 +13,11 @@ import java.net.URL;
  */
 public class IRealDeviceCreditCardTest {
 
-    static AppiumDriver<MobileElement> driver;
-    static DesiredCapabilities capabilities;
-    public static void main(String[] args) throws MalformedURLException{
+    AppiumDriver<MobileElement> driver;
+    DesiredCapabilities capabilities;
+
+    @Test
+    public void testOne() throws MalformedURLException{
 
                 /*"platformName": "iOS",
                 "platformVersion": "10.3.1",
